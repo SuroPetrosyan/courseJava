@@ -2,60 +2,78 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] array = {1, 5};
-        System.out.println(Arrays.toString(array));
+                int x = 437;
+                int y = x % 10;
+                int z = (x / 10) % 10;
+                int w = (x / 100) % 10;
+                if (w + z == y) {
+                    boolean t = true;
+                    System.out.println(t);
+                } else {
+                    boolean t = false;
+                    System.out.println(t);
+                }
 
-        int[] array1 = new int[1000];
-        for (int x = 0; x <= array1.length - 1; x++) {
-            array1[x] = x + 1;
-        }
-        System.out.println(array1);
+                int a = 223;
+                int b = a % 10;
+                int c = (a / 10) % 10;
+                int d = (a / 100) % 10;
+                if (b == c || c == d || d == b) {
+                    boolean t = true;
+                    System.out.println(t);
+                } else {
+                    boolean t = false;
+                    System.out.println(t);
+                }
 
-        int[] array3 = {1, 4, 10, 17, 20, 25, 30, 35, 38, 40, 42, 45, 50};
-        for (int i = 0; i <= array3.length - 1; i++) {
-            if (array3[i] % 5 == 0) {
-                System.out.println(array3[i]);
+                int k = 514 / (5 + 1 + 4);
+                int s = 514;
+                int l = s % 10;
+                int m = (s / 10) % 10;
+                int n = (s / 100) % 10;
+                if (s > k) {
+                    boolean t = true;
+                    System.out.println(t);
+                } else {
+                    System.out.println(l / s);
+
+                }
+
+                int q = 427;
+                int r = q % 10;
+                int u = (q / 10) % 10;
+                int v = (q / 100) % 10;
+                if (r > u && r > v) {
+                    System.out.println(r);
+                } else if (u > r && u > v) {
+                    System.out.println(u);
+                } else if (v > r && v > u) {
+                    System.out.println(v);
+                }
+                int q1 = 815;
+                int r1 = q1 % 10;
+                int u1 = (q1 / 10) % 10;
+                int v1 = (q1 / 100) % 10;
+                if (r1 < u1 && r1 < v1) {
+                    System.out.println(r1);
+                } else if (u1 < r1 && u1 < v1) {
+                    System.out.println(u1);
+                } else if (v1 < r1 && v1 < u1) {
+                    System.out.println(v1);
+                }
+
             }
 
         }
 
-        int[] array4 = {1, 4, 7, 10, 14, 18, 20, 22, 25, 28, 29, 30};
-        for (int a = 0; a <= array4.length - 1; a++) {
-            if (array4[a] % 2 == 0) {
-                System.out.println(array4[a]);
-            }
-        }
-
-        int[] array5 = {45, 784, 68, 78, 97};
-        //reverseArray = {54,487,87,79}
-        int[] reversArr = new int[array5.length];
-        for (int i = 0; i < array5.length; i++) {
-            int el = array5[i];
-            int reversEl = 0;
-            while (el != 0) {
-                reversEl = reversEl * 10 + el % 10;
-                el = el / 10;
-            }
-            reversArr[i] = reversEl;
-
-        }
-        for (int i = 0; i < reversArr.length; i++) {
-            System.out.println(reversArr[i] + " ");
-        }
-
-        int[] array6 = {45, 784, 68, 78, 97};
-        int[] reversAr = new int[array6.length];
-        for (int i = array6.length;j=0;j++; i >=0 ; i--) {
-            reversAr[j]=array6[i];}
-        int []arr={4,5,7,5,4};//tany
-
-        int []arm ={4,5,7,5,4,0,8,0,1,9};
-        int countofZerro = 0;
-        for (int i = 0; i < arm.length; i++) {
-            if (arm[i]==0);{countofZerro++};
 
 
-        }
-    }
-}
+
+
+
+
+
+
+
+
 
