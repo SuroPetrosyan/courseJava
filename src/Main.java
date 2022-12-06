@@ -97,6 +97,23 @@ public class Main {
             char f = 'b';
             System.out.println('b');
         }
+        // 201.
+        int N = 457;
+        int M = 0;
+        while ( N!=0) {
+            M++;
+            N = N / 10;
+        }
+        System.out.println(M);
+
+        // 202.
+        int L = 421;
+        int S = L % 10;
+        int C = (L / 10) % 10;
+        int V = (L / 100) % 10;
+        int D = S + C + V;
+        System.out.println(D);
+
 
     }
 
