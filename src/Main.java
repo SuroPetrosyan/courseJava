@@ -100,7 +100,7 @@ public class Main {
         // 201.
         int N = 457;
         int M = 0;
-        while ( N!=0) {
+        while (N != 0) {
             M++;
             N = N / 10;
         }
@@ -113,7 +113,63 @@ public class Main {
         int V = (L / 100) % 10;
         int D = S + C + V;
         System.out.println(D);
+//211
+        int array[] = {4, 8, -14, -22, 11, 12};
+        int drakanTveriGumar = 0;
+        int drakanTveriQanak = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] >= 0) {
+                drakanTveriQanak++;
+                drakanTveriGumar = drakanTveriGumar + array[i];
+            }
+        }
+        System.out.println(drakanTveriGumar / drakanTveriQanak);
+        //212
+        int array1[] = {4, 8, -14, -22, 11, 12};
+        int drakanTveriArt = 1;
+        int drakanTveriQanak1 = 0;
+        for (int i = 0; i < array1.length; i++) {
+            if (array1[i] >= 0) {
+                drakanTveriQanak1++;
+                drakanTveriArt = drakanTveriArt * array[i];
+            }
+        }
+        System.out.println(drakanTveriArt / drakanTveriQanak);
+        //213
+        int array2[] = {4, 8, -14, -22, 11, 12};
+        int bacasakanTveriArt = 1;
+        int bacasakanTveriQanak = 0;
+        for (int i = 0; i < array2.length; i++) {
+            if (array2[i] < 0) {
+                bacasakanTveriQanak++;
+                bacasakanTveriArt = bacasakanTveriArt * array[i];
+            }
+        }
+        System.out.println(bacasakanTveriArt / bacasakanTveriQanak);
+        //214
+        int array3[] = {4, 8, -14, -22, 11, 12};
+        int bacasakanTveriGumar = 0;
+        int bacasakanTveriQanak5 = 0;
+        for (int i = 0; i < array3.length; i++) {
+            if (array3[i] < 0) {
+                bacasakanTveriQanak5++;
+                bacasakanTveriGumar = bacasakanTveriGumar + array3[i];
+            }
+        }
+        System.out.println(bacasakanTveriGumar / bacasakanTveriQanak5);
+        //220
+        int array4[] = {4, 8, -14, -22, 11, 12};
+        int drakanTveriQanak2 = 0;
+        int bacasakanTveriQanak2 = 0;
+        for (int i = 0; i < array4.length; i++) {
+            if (array4[i] < 0) {
+                bacasakanTveriQanak2++;
+            } else if (array4[i]>0) {drakanTveriQanak2++;
 
+            }
+        }
+        System.out.println("bacasakanTveriQanak  " +  bacasakanTveriQanak2);
+        System.out.println("drakanTveriQanak  "+  drakanTveriQanak2);
 
     }
 
