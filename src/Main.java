@@ -165,6 +165,7 @@ public class Main {
             if (array4[i] < 0) {
 
 
+
                 bacasakanTveriQanak2++;
             } else if (array4[i]>0) {drakanTveriQanak2++;
 
