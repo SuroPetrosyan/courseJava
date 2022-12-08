@@ -163,6 +163,8 @@ public class Main {
         int bacasakanTveriQanak2 = 0;
         for (int i = 0; i < array4.length; i++) {
             if (array4[i] < 0) {
+
+
                 bacasakanTveriQanak2++;
             } else if (array4[i]>0) {drakanTveriQanak2++;
 
