@@ -1,77 +1,41 @@
 package Model;
 
-import java.util.Scanner;
-
-public class Student {
-
-    private String firstName;
-    private String lastName;
-    private int age;
-    private boolean isArmenian;
-    private char gender;
+public class Student extends Human {
     private double mark;
+    private int course;
+    private String studentID;
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setArmenian(boolean armenian) {
-        isArmenian = armenian;
-
-    }
-
-    public boolean isArmenian() {
-        return isArmenian;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-
-    }
-
-    public char getGender() {
-        return gender;
+    public double getMark() {
+        return mark;
     }
 
     public void setMark(double mark) {
         this.mark = mark;
     }
 
-    public double getMark() {
-        return mark;
+    public int getCourse() {
+        return course;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
+    }
+
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
     }
 
     public void printInfo() {
-        System.out.println("First Name" + ": " + firstName);
-        System.out.println("Last Name" +  ":  " + lastName);
-        System.out.println("age" + ":  "  + age);
-        System.out.println("is Armenian" +  ":  "+ (isArmenian?"yes":"no"));
-        System.out.println("gender" +  ":  " + gender);
-        System.out.println("mark" + ":  "+  mark);
+        super.printInfo();
+        System.out.println(mark + ":" + "Mark");
+        System.out.println(course + ":" + "Course");
+        System.out.println(studentID + ":" + "Student ID");
+        System.out.println("***************************");
     }
 }
-
 
 
