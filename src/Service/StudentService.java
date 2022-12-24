@@ -25,5 +25,18 @@ public class StudentService {
         return student;
 
     }
+
+    public Student minAge(Student[] students) {
+        Student student = students[0];
+        for (int i = 1; i < students.length; i++) {
+            int minage = students[0].getAge();
+            if (students[i].getAge() < minage) {
+                minage = students[i].getAge();
+                student = students[i];
+            }
+        }
+
+        return student;
+    }
 }
 

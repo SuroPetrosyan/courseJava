@@ -3,7 +3,7 @@ package Model;
 public class Human {
     private String firstName;
     private String lastName;
-    private int age = Integer.parseInt(new String("wrong"));
+    private int age=2022;
 
     public String getFirstName() {
         return firstName;

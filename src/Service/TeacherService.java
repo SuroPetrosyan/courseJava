@@ -5,22 +5,23 @@ import Model.Teacher;
 
 import java.util.Scanner;
 
+
 public class TeacherService {
     public Teacher createTeacher () {
-        Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         Teacher teacher = new Teacher();
         System.out.println("***************************");
         System.out.println("First Name");
-        String firstName = scanner1.next();
+        String firstName = scanner.next();
         teacher.setFirstName(firstName);
         System.out.println("Last Name");
-        String lastName = scanner1.next();
+        String lastName = scanner.next();
         teacher.setLastName(lastName);
         System.out.println("Age");
-        int age = scanner1.nextInt();
+        int age = scanner.nextInt();
         teacher.setAge(age);
         System.out.println("Experience");
-        double experience = scanner1.nextDouble();
+        double experience = scanner.nextDouble();
         teacher.setExperience(experience);
         System.out.println("**************************");
         return teacher;

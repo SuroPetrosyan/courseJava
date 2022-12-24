@@ -28,7 +28,7 @@ public class Student extends Human {
     public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
-
+    @Override
     public void printInfo() {
         super.printInfo();
         System.out.println(mark + ":" + "Mark");
@@ -36,6 +36,7 @@ public class Student extends Human {
         System.out.println(studentID + ":" + "Student ID");
         System.out.println("***************************");
     }
+
 }
 
 

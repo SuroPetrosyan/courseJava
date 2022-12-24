@@ -11,8 +11,10 @@ public class Teacher extends Human {
         this.experience = experience;
     }
 
-    public void printInfo (){
+    public void printInfo() {
         super.printInfo();
-        System.out.println(experience+":" + "Experience");
+        System.out.println(experience + ":" + "Experience");
     }
+
+
 }
